@@ -7,7 +7,10 @@
     <title>Titulo de la pagina Web</title>
 </head>
 <body>
-
+  
+    <!--####################################################################################################-->
+    <!--####################################################################################################-->
+    <!--####################################################################################################-->
     <!--Se iniciara con el Header (o encabezado del diseño Web)-- contendra el logo y titulo menu-->
     <header> 
         <center>
@@ -35,15 +38,124 @@
         </nav>
     </center>
     </header>
-
+    
+    
+    <!--####################################################################################################-->
+    <!--####################################################################################################-->
+    <!--####################################################################################################-->
     <!--Formulario -->    
-    <main  style="background-color:red;">
+    <main  style="background-color:beige;">
+        <br /><br />
+    
+        <!--Creando Formulario con etiqueta FORM-- de debe poner la propiedad id-->
+        <!--Atributo for permite poner el cursor en la caja de tex  to-->
         <center>
-            <h1>Titulo Formulario</h1>
+            <h1>Titulo de Formulario Cambios</h1>
+        <form id="FormularioG23">
+            <label for="Nombres">Ingresar Nombres</label>
+            <!--placeHolder es un tipo de Input(Atributo) pone texto en cajon,  size(Tamaño Cajon en PX)-->
+            <!--Required=True(Campo Obligatorio de diligenciar) se une el Label con Input-->
+            <!--Se puede tener un identificador ID o Name-->
+            <input type="text" placeholder="Ingresa Nombre" id="Nombres" size="60px" minlength=5 required/>
+            <br><br/>
+            <label for="Numero_Documento">Ingresar Numero Años</label>
+            <input type="number" placeholder="Ingresa Año" id="Numero_Documento "ize="60px" required=true 
+            min=1900 max="2022"/>
+            <br><br/>
+            <label for="Fecha">Ingresar Fecha</label>
+            <input type="date" id="Fecha" size="60px" required=true/>
+            <br><br/>
+            <label for="Clave">Ingresar Clave</label>
+            <input type="password" id="Clave"/>
+            <br><br/>
+            
+            <!--Ejemplo de lista desplegable con atributo Select -->
+            <!--Poner Selected en uno de los valores la seleccion siempre de primera en la opciones de la lista-->
+            <label for="Tipo_Documento">Ingrese Tipo de Documento</label>
+            <select id="Tipo_Documento">
+                <option value="CC" selected>Cedula de Ciudadania</option>
+                <option value="TI">Tarjeta de Identidad</option>
+                <option value="CE">Cedula de Extrangeria</option>
+
+            </select>
+            <br><br/>
+
+            <!--Con esta propiedad se ingresa un cuadro para ingresar observaciones-->
+            <label for="Observaciones">Ingresar observaciones</label>
+            <textarea id="Observaciones" autocomplete="on" cols="50" minlength="10">Ingresar Observaciones
+            </textarea>
+            <br><br/>
+
+            <!--Propiedad radio Butoon permite seleccionar una opcion con un click -->
+            <label>Ingresar Genero: </label>
+            <br><br/>
+            <label>Masculino</label><input type="radio" name="genero"/>
+            <label>Femenino</label><input type="radio" name="genero"/>
+            <br><br/>
+
+            <!--Propiedad checkbox permite seleccionar varias opciones con un click -->
+            <label>Ingresar Materias</label>
+            <br><br/>
+            <label>Quimica</label><input type="checkbox" name="Materias"/>
+            <label>Fisica</label><input type="checkbox" name="Materias"/>
+            <label>Idiomas</label><input type="checkbox" name="Materias"/>
+            <br><br/>
+
+
+            <!--Se crea un boton Tipo Submint----- Value= Texto que tendra el boton-->
+            <input type="submit" id="Boton" size="60px" value="Guardar"/> 
+            <br><br/>
+
+        </form>
+        
+
+        <!--CREACIÓN DE TABLA-->    
+        <h1>Ejemplo Tabla</h1>
         </center>
+        <!--Atributo Align=Alinear  bgcolor=Color Tabla width=Ancho de tabla en % para que se adapte
+        a cualquier tipo de pantalla-->
+        <table align="center" bgcolor="#C0C0C0" border="1" width="50%">
+            <tr>
+                <td></td>
+                <td>Lunes</td>
+                <td>Martes</td>
+                <td>Miercoles</td>
+                <td>Jueves</td>
+                <td>Viernes</td>
+            </tr>
+
+            <tr>
+                <!--Al poner th en reemplazo de td se pone en negrilla el texto-->
+                <th>8-10</th>
+                <td>Quimica</td>
+                <td>Fisica</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+                <td>Idiomas</td>
+            </tr>
+
+
+
+
+
+
+
+        </table>
+
+
+
+      
         
     </main>   
     
+
+
+
+
+
+    <!--####################################################################################################-->
+    <!--####################################################################################################-->
+    <!--####################################################################################################-->
     <!--Informacion del proyecto, grupo, redes sociales -->
     <footer>
         <center>
