@@ -1,0 +1,77 @@
+
+
+/*Comentarios de CSS*/
+
+
+label{
+    width:300px;
+    display:inline-block;
+
+}
+
+table{
+    width: 90%;
+}
+
+h1{
+    color: aqua;
+    font-size: 40px;
+}
+
+/*Se crea la caja*/
+
+/*div{
+    width:300px;
+    height:200px;
+    background-color:blue;  
+}*/
+
+/*Se crean estilos para la clase de HTML-Cuando es Class con (.) */
+
+.estilo1{
+    width:300px;
+    height:200px;
+    background-color: cornflowerblue;
+    
+}
+
+/*Se puede dar estilo tambien a las cajas por ID con (#)*/
+#caja1{
+    width:300px;
+    height:200px;
+    background-color:cadetblue;
+}
+
+/*Estilo de cala Header-Principal, se recomiento poner en % para que se adapte a cada tipo de disponitivo*/
+
+.caja-header{
+    width:100%;
+    height:200px;
+    background-color:deepskyblue;
+}
+
+#caja-logo{
+    width: 50%;
+    height: 150px;
+    background-color:coral;
+    /*Se requiere que caja logo este al izquierdo de la caja totulo con float se le da esta dirección*/
+    float: left;
+}
+
+#caja-titulo{
+    width: 50%;
+    height: 150px;
+    background-color:crimson;
+    float: right;
+}    
+
+#caja-menu{
+
+    width: 50%;
+    height: 50px;
+    background-color:darkorchid;
+    float: left;
+    margin-left: 25%;
+    margin-right: 25%;
+
+}

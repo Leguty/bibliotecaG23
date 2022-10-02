@@ -5,9 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titulo de la pagina Web</title>
+
+    <!--Con esta instruccion el me llama la hoja de estilos desde la carpeta CSS-->
+    <link rel="stylesheet" href="css/estilo1.css"
+
+    <!--Con este Style dentro del Head se cambia el estilo del formulario y h1-Cambio de 
+    atributos a una etiqueta-->
+    
+    <style>
+        form{
+            width: 600px;
+            background-color:aqua;
+        }
+
+        h1{
+            font-size:30px;
+            background-color:beige;
+        }
+
+
+    </style>
 </head>
-<body>
-  
+<!--Aplicando CSS con etiqueta Style se agrega a la etiqueta HTML-->
+<!--Background asigna color, font-famili cambia tipo de letra-->
+<body style="background-color:white; font-family:Arial, Helvetica, sans-serif;">
+
+    <!--####################################################################################################-->
+    <!--####################################################################################################-->
+    <!--Creacion de Caja etiqueta div propiedades: Class=Crea un estilo nuevo o por medio del ID-->
+    <!--<div class="estilo1">
+        <h4>texto</h4>
+   </div>
+   
+    <div id="caja1">
+        <h4>texto caja 1</h4>
+    </div> -->
+
+    <!--Se crearan las cajas para el diseño de la pagina web-->
+    <!--Se crea la caja pricipal o caja-header y en la hija de estilo 1 se le dan las propiedades-->
+    <div class="caja-header">
+        <!--Se crea otra caja dentro de la principal-->
+            <div id="caja-logo">
+
+            </div>
+            <div id="caja-titulo">
+
+            </div>
+            <div id="caja-menu">
+                
+            </div>
+        
+    </div>
+
+      
     <!--####################################################################################################-->
     <!--####################################################################################################-->
     <!--####################################################################################################-->
@@ -44,7 +94,7 @@
     <!--####################################################################################################-->
     <!--####################################################################################################-->
     <!--Formulario -->    
-    <main  style="background-color:beige;">
+    <main>
         <br /><br />
     
         <!--Creando Formulario con etiqueta FORM-- de debe poner la propiedad id-->
