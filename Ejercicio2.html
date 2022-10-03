@@ -9,26 +9,22 @@
     <!--Con esta instruccion el me llama la hoja de estilos desde la carpeta CSS-->
     <link rel="stylesheet" href="css/estilo1.css"
 
+    <!---->
     <!--Con este Style dentro del Head se cambia el estilo del formulario y h1-Cambio de 
     atributos a una etiqueta-->
-    
-    <style>
+       
+    <!--Se realizara en la hoja de estilos este diseño del formulario
+      <style>
         form{
             width: 600px;
             background-color:aqua;
         }
+</style> -->
 
-        h1{
-            font-size:30px;
-            background-color:beige;
-        }
-
-
-    </style>
 </head>
 <!--Aplicando CSS con etiqueta Style se agrega a la etiqueta HTML-->
 <!--Background asigna color, font-famili cambia tipo de letra-->
-<body style="background-color:white; font-family:Arial, Helvetica, sans-serif;">
+<body>
 
     <!--####################################################################################################-->
     <!--####################################################################################################-->
@@ -45,18 +41,41 @@
     <!--Se crea la caja pricipal o caja-header y en la hija de estilo 1 se le dan las propiedades-->
     <div class="caja-header">
         <!--Se crea otra caja dentro de la principal-->
-            <div id="caja-logo">
-
-            </div>
+        <div id="caja-logo">
+                <!--Se agrega el logo-->
+    <!--Una imagen tambien puede contener un hipervinculo-->
+    <a href="https://pascualbravo.edu.co/" target="_blank">
+    <!--Se adiciona un logo en el Header con la etiqueta IMG--SRC:Ubicación ALT:Nombre-->
+    <!--Se puede ajustar el tamaño de la imagen con las propiedades height="200px" width="200px"-->
+    <img src="imagenes/logo1.jpg" alt="Logo de la Bilioteca"> 
+        </a>    
+        </div>
+            
             <div id="caja-titulo">
-
+            <h1>Biblioteca G23</h1>
             </div>
-            <div id="caja-menu">
-                
-            </div>
-        
+            
+                <div id="caja-menu">
+                <center>
+                <!--Se crea un menu dentro del header con la etiqueta NAV(Elementos de navegacion contiene listas ul
+                y li son los items o puntos que me llevan a un enlace de otras acciones)-->    
+            <!--<nav style="background-color:cornflowerblue;">-->
+                <nav>
+                <!--Se crea una lista con la propiedad UL-->
+                <ul>    
+                <!--Se crean los items de la lista no ordenada con la propiedad li y ordenadas on Lo-->
+                <!--La etiqueta <a> y href="" redirecciona a otra pagina o carpeta-->
+                <!--La propiedad targuet permite que se habran los enlaces en una pagina independiente-->
+                <li>
+                <a class="menu1" href="https://pascualbravo.edu.co/" target="_blank">Pascual</a></li>
+                <li><a class="menu1" href="ejercicio1.html" target="_parent">Ejercicio 3</a></li>
+                <li><a class="menu1" href="mailto:leidy.gutierrez.leon@gmail.com" target="_self">Correo</a></li>
+                </ul>
+            </nav>
+                </center>
     </div>
-
+</div>
+<br  /><br  /><br  /><br  />
       
     <!--####################################################################################################-->
     <!--####################################################################################################-->
@@ -64,29 +83,10 @@
     <!--Se iniciara con el Header (o encabezado del diseño Web)-- contendra el logo y titulo menu-->
     <header> 
         <center>
-            <!--Una imagen tambien puede contener un hipervinculo-->
-            <a href="https://pascualbravo.edu.co/" target="_blank">
-            <!--Se adiciona un logo en el Header con la etiqueta IMG--SRC:Ubicación ALT:Nombre-->
-            <!--Se puede ajustar el tamaño de la imagen con las propiedades height="200px" width="200px"-->
-            <img src="imagenes/logo1.jpg" alt="Logo de la Bilioteca"> 
-            </a>
-            <h1>Biblioteca G23</h1>
+            
         
         
-    <!--Se crea un menu dentro del header con la etiqueta NAV(Elementos de navegacion contiene listas ul
-        y li son los items o puntos que me llevan a un enlace de otras acciones)-->    
-        <nav style="background-color:cornflowerblue;">
-            <!--Se crea una lista con la propiedad UL-->
-            <ul>    
-                <!--Se crean los items de la lista no ordenada con la propiedad li y ordenadas on Lo-->
-                <!--La etiqueta <a> y href="" redirecciona a otra pagina o carpeta-->
-                <!--La propiedad targuet permite que se habran los enlaces en una pagina independiente-->
-                <li style="background-color:coral;"><a href="https://pascualbravo.edu.co/" target="_blank">Pascual</a></li>
-                <li><a href="ejercicio3.html" target="_parent"></a>Ejercicio 3</a></li>
-                <li><a href="mailto:leidy.gutierrez.leon@gmail.com" target="_self">Correo</a></li>
-            </ul>
-        </nav>
-    </center>
+       </center>
     </header>
     
     
@@ -100,29 +100,29 @@
         <!--Creando Formulario con etiqueta FORM-- de debe poner la propiedad id-->
         <!--Atributo for permite poner el cursor en la caja de tex  to-->
         <center>
-            <h1>Titulo de Formulario Cambios</h1>
+            <h1>Titulo de Formulario</h1>
         <form id="FormularioG23">
             <label for="Nombres">Ingresar Nombres</label>
             <!--placeHolder es un tipo de Input(Atributo) pone texto en cajon,  size(Tamaño Cajon en PX)-->
             <!--Required=True(Campo Obligatorio de diligenciar) se une el Label con Input-->
             <!--Se puede tener un identificador ID o Name-->
-            <input type="text" placeholder="Ingresa Nombre" id="Nombres" size="60px" minlength=5 required/>
+            <input class="input-form" type="text" placeholder="Nombre" id="Nombres" size="60px" minlength=5 required/>
             <br><br/>
             <label for="Numero_Documento">Ingresar Numero Años</label>
-            <input type="number" placeholder="Ingresa Año" id="Numero_Documento "ize="60px" required=true 
+            <input class="input-form" type="number" placeholder="Año" id="Numero_Documento" size="60px" required=true 
             min=1900 max="2022"/>
             <br><br/>
-            <label for="Fecha">Ingresar Fecha</label>
-            <input type="date" id="Fecha" size="60px" required=true/>
+            <label for="Fecha"> Fecha</label>
+            <input class="input-form" type="date" id="Fecha" size="60px" required=true/>
             <br><br/>
-            <label for="Clave">Ingresar Clave</label>
-            <input type="password" id="Clave"/>
+            <label for="Clave"> Clave</label>
+            <input class="input-form" type="password" id="Clave"/>
             <br><br/>
             
             <!--Ejemplo de lista desplegable con atributo Select -->
             <!--Poner Selected en uno de los valores la seleccion siempre de primera en la opciones de la lista-->
-            <label for="Tipo_Documento">Ingrese Tipo de Documento</label>
-            <select id="Tipo_Documento">
+            <label for="Tipo_Documento">Tipo de Documento</label>
+            <select class="input-form" id="Tipo_Documento">
                 <option value="CC" selected>Cedula de Ciudadania</option>
                 <option value="TI">Tarjeta de Identidad</option>
                 <option value="CE">Cedula de Extrangeria</option>
@@ -131,83 +131,103 @@
             <br><br/>
 
             <!--Con esta propiedad se ingresa un cuadro para ingresar observaciones-->
-            <label for="Observaciones">Ingresar observaciones</label>
-            <textarea id="Observaciones" autocomplete="on" cols="50" minlength="10">Ingresar Observaciones
+            <label for="Observaciones">Observaciones</label>
+            <textarea class="input-form"id="Observaciones" autocomplete="on" cols="60" minlength="10">Ingresar Observaciones
             </textarea>
             <br><br/>
 
             <!--Propiedad radio Butoon permite seleccionar una opcion con un click -->
-            <label>Ingresar Genero: </label>
+            <label>Genero: </label>
             <br><br/>
-            <label>Masculino</label><input type="radio" name="genero"/>
-            <label>Femenino</label><input type="radio" name="genero"/>
+            <label class="label1">Masculino</label><input type="radio" name="genero"/>
+            <label class="label1">Femenino</label><input type="radio" name="genero"/>
             <br><br/>
 
             <!--Propiedad checkbox permite seleccionar varias opciones con un click -->
-            <label>Ingresar Materias</label>
+            <label>Materias</label>
             <br><br/>
-            <label>Quimica</label><input type="checkbox" name="Materias"/>
-            <label>Fisica</label><input type="checkbox" name="Materias"/>
-            <label>Idiomas</label><input type="checkbox" name="Materias"/>
+            <label class="label1">Quimica</label><input type="checkbox" name="Materias"/>
+            <label class="label1">Fisica</label><input type="checkbox" name="Materias"/>
+            <label class="label1">Idiomas</label><input type="checkbox" name="Materias"/>
             <br><br/>
 
 
             <!--Se crea un boton Tipo Submint----- Value= Texto que tendra el boton-->
-            <input type="submit" id="Boton" size="60px" value="Guardar"/> 
+            <!--<input type="submit" id="Boton" size="60px" value="Guardar"/> -->
+            <input class="boton-formulario" type="submit" id="Boton" value="Guardar"/> 
+            <input class="boton-formulario" type="submit" id="Boton" value="Cancelar"/> 
+
             <br><br/>
 
         </form>
-        
-
+ 
         <!--CREACIÓN DE TABLA-->    
         <h1>Ejemplo Tabla</h1>
         </center>
         <!--Atributo Align=Alinear  bgcolor=Color Tabla width=Ancho de tabla en % para que se adapte
         a cualquier tipo de pantalla-->
-        <table align="center" bgcolor="#C0C0C0" border="1" width="50%">
+        <!--<table align="center" bgcolor="#C0C0C0" border="1" width="50%">-->
+        
+        <table class="tabla" align="center">     
             <tr>
-                <td></td>
-                <td>Lunes</td>
-                <td>Martes</td>
-                <td>Miercoles</td>
-                <td>Jueves</td>
-                <td>Viernes</td>
+                <th></th>
+                <th>Lunes</td>
+                <th>Martes</td>
+                <th>Miercoles</td>
+                <th>Jueves</td>
+                <th>Viernes</td>
             </tr>
 
             <tr>
                 <!--Al poner th en reemplazo de td se pone en negrilla el texto-->
-                <th>8-10</th>
+                <td>8-10</th>
                 <td>Quimica</td>
                 <td>Fisica</td>
                 <td>Matematicas</td>
                 <td>Matematicas</td>
                 <td>Idiomas</td>
             </tr>
-
-
-
-
-
-
-
         </table>
 
-
-
-      
-        
     </main>   
-    
-
-
-
-
-
+ 
     <!--####################################################################################################-->
     <!--####################################################################################################-->
     <!--####################################################################################################-->
     <!--Informacion del proyecto, grupo, redes sociales -->
     <footer>
+
+        <div class="caja1">
+            <nav>
+        <!--Se crea una lista con la propiedad UL-->
+        <ul>
+            <h1>ENLACES</h1>
+        <!--Se crean los items de la lista no ordenada con la propiedad li y ordenadas on Lo-->
+        <!--La etiqueta <a> y href="" redirecciona a otra pagina o carpeta-->
+        <!--La propiedad targuet permite que se habran los enlaces en una pagina independiente-->
+            <li><a href="mailto:leidy.gutierrez.leon@gmail.com" target="_self">Nosotros</a></li>
+            <li><a href="mailto:leidy.gutierrez.leon@gmail.com" target="_self">Contacto</a></li>
+            <li><a href="ejercicio1.html" target="_parent">Mapa del Sitio</a></li>
+            </ul>    
+
+            </nav>
+
+        </div>
+        <div class="caja2">
+
+            <nav>
+                <ul>
+                    <h1>CURSOS</h1>
+                    <li><a href="mailto:leidy.gutierrez.leon@gmail.com" target="_self">Nosotros</a></li>
+                    <li><a href="mailto:leidy.gutierrez.leon@gmail.com" target="_self">Contacto</a></li>
+                    <li><a href="ejercicio1.html" target="_parent">Mapa del Sitio</a></li>
+                    </ul>    
+        
+                    </nav>
+        </div>
+        <div class="caja3"></div>
+
+
         <center>
             <h1>Titulo Footer</h1>
             <p>Aqui va un parrafo de prueba</p>

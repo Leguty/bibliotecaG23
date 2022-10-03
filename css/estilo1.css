@@ -1,10 +1,15 @@
+/*Font family me permite cambiar el tipo de texto en toda la pagina */
+body{
+    font-family:Arial, Helvetica, sans-serif;
 
 
+
+}
 /*Comentarios de CSS*/
 
 
 label{
-    width:300px;
+    width:150px;
     display:inline-block;
 
 }
@@ -13,10 +18,6 @@ table{
     width: 90%;
 }
 
-h1{
-    color: aqua;
-    font-size: 40px;
-}
 
 /*Se crea la caja*/
 
@@ -39,7 +40,7 @@ h1{
 #caja1{
     width:300px;
     height:200px;
-    background-color:cadetblue;
+    /*background-color:cadetblue;*/
 }
 
 /*Estilo de cala Header-Principal, se recomiento poner en % para que se adapte a cada tipo de disponitivo*/
@@ -47,31 +48,185 @@ h1{
 .caja-header{
     width:100%;
     height:200px;
-    background-color:deepskyblue;
+    /*background-color:deepskyblue;*/
 }
 
 #caja-logo{
     width: 50%;
     height: 150px;
-    background-color:coral;
+   /*background-color:coral;*/
     /*Se requiere que caja logo este al izquierdo de la caja totulo con float se le da esta dirección*/
     float: left;
+    position: relative;
 }
 
+#caja-logo img{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
 #caja-titulo{
     width: 50%;
     height: 150px;
-    background-color:crimson;
+    /*background-color:crimson;*/
     float: right;
+    text-align: left;/*Centra el titulo, con left lo alinea a la izquierda*/
 }    
+
+#caja-titulo{
+    line-height:110px; /*Esta propiedad permite centrar pero con piexles*/
+
+}
 
 #caja-menu{
 
     width: 50%;
     height: 50px;
-    background-color:darkorchid;
+    /*background-color:darkorchid;*/
     float: left;
     margin-left: 25%;
     margin-right: 25%;
+    
+}
 
+
+/*Para alinear el menu de la tabla la propiedad display:inline-block convierte el menú en una sola linea horizontal*/
+
+ul li{
+    display:inline-block;
+    width:20%;          /*Tamaño de cada boton*/
+    height:40px;        /*Alto de los botones del menu*/
+    background-color:coral;
+    padding-top:15px;
+}
+
+/*Para cambiar el color de la letra del menu dentro de una tabla*/
+
+ul li a{
+    color:white;
+    text-decoration:none; /*Con esta instruccion le quitamos la line debajo del texto*/
+
+}
+
+
+/*Otra forma de cambiar elcolor de la letra del menu es por Class*/
+/*.menu1{
+
+    color:crimson
+}*/
+
+/*Para crear un evento al pasar el cursor del mouse sobre un boton*/
+/*Que accion quiere que se haga cuando el cursor este sobre el menu*/
+
+ul li a:hover{ 
+    color:crimson;
+    text-decoration:underline;
+    font-size:18px;
+}
+
+
+
+
+form{
+    width: 50%;     
+    /*background-color:aqua;*/
+    text-align:left;
+}
+
+
+/*Como es una clase lo llamo con el .*/
+
+.lable1{
+width: 20%;
+
+}
+
+.input-form{
+    width:70%;
+
+
+}
+
+
+.boton-formulario{
+    width:49%;
+    height:30px;
+    background-color:#FF5733;   /*Color Botton*/
+    color:#FFC300;              /*Color de letra*/
+    border: none;
+}
+
+
+/*Crer un evento en el formulario al pasar el cursor*/
+.boton-formulario:hover{
+    color:#C70039;
+    text-decoration:underline;
+}
+
+.tabla{
+    width:70%;
+    background-color:#fff;
+    border:1px solid #000;
+}
+
+th{
+    background-color:gainsboro;
+    
+}
+
+
+/*Cuando la instruccion me cambia varias etiquetas se pueden poner asi con coma, */
+td, th{
+    border:none;
+
+}
+
+/*Parte final de las paginas Web FOOTER*/
+footer{
+    width: 100%;
+    height:300px;
+    background-color:#FFC300;
+}
+
+/*Estilos de las cajas del Footer*/
+
+.caja1{
+    width:30%;
+    height:300px;
+    background-color:brown;
+    float:left;
+}
+
+.caja2{
+    width:30%;
+    height:300px;
+    background-color:coral;
+    float:left;
+}
+
+.caja3{
+    width:30%;
+    height:300px;
+    background-color:cornflowerblue;
+    float:left;
+}
+
+
+
+/*Para alinear el menu de la tabla la propiedad display:inline-block convierte el menú en una sola linea horizontal*/
+
+.menu2{
+    background-color:none ;
+
+
+    
+}
+ul li{
+    display:none;
+    width:20%;          /*Tamaño de cada boton*/
+    height:40px;        /*Alto de los botones del menu*/
+    background-color:coral;
+    padding-top:15px;
 }
