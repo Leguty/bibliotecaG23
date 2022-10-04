@@ -184,49 +184,144 @@ td, th{
 }
 
 /*Parte final de las paginas Web FOOTER*/
-footer{
+/*footer{
     width: 100%;
     height:300px;
     background-color:#FFC300;
-}
+}*/
 
 /*Estilos de las cajas del Footer*/
 
-.caja1{
-    width:30%;
-    height:300px;
-    background-color:brown;
+body{
+
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+/*Cajas al final */
+
+#caja-principal{
+    width:100%;
+    height:230px;
+    /*background-color:antiquewhite;*/
+    /*font-family: 'Libre Baskerville', serif;*/
+}
+
+.caja-publicidad1{
+    width:32%;
+    height:230px;
+    /*background-color:burlywood;*/
+    float:left;
+    margin-right:10px;
+    border-width:1px;
+    border-style:solid;
+    border-color:black;
+
+}
+
+.caja-publicidad2{
+    width:32%;
+    height:230px;
+    /*background-color:cornflowerblue;*/
+    float:left;
+    margin-right:10px;
+    border-width:1px;
+    border-style:solid;
+    border-color:black;
+}
+
+.caja-publicidad3{
+    width:32%;
+    height:230px;
+    /*background-color:tomato;*/
+    float:left;
+    margin-right:10px;
+    border-width:1px;
+    border-style:solid;
+    border-color:black;
+}
+
+
+.caja-superior{
+    width:100%;
+    height:60px;
+    /*background-color:blueviolet;*/
+    float:left;
+
+}
+
+.caja-superior1{
+    width:80%;
+    height:60px;
+    /*background-color:coral;*/
+    float:left;
+   
+}
+
+.caja-superior2{
+    width:20%;
+    height:60px;
+    /*background-color:yellow;*/
+    float:left;
+    position:relative;  /*Para alinear el icono*/
+    color:blueviolet;
+
+}
+
+/*Esto permite el ajuste del icono*/
+.caja-superior span{
+    position:absolute;
+    left:70%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%);
+}
+
+.caja-media{
+    width:100%;
+    height:130px;
+    /*background-color:darkblue;*/
+    float:left;
+    /*Para alinear el texto */
+    text-align:center;
+}
+
+.caja-media1{
+    width:50%;
+    height:130px;
+    /*background-color:aqua ;*/
+    float:left;
+
+}
+
+.caja-media2{
+    width:50%;
+    height:130px;
+   /* background-color:aquamarine ;*/
     float:left;
 }
-
-.caja2{
-    width:30%;
-    height:300px;
-    background-color:coral;
+.caja-inferior{
+    width:100%;
+    height:40px;
+    /*background-color:red;*/
     float:left;
+    position: relative;
 }
 
-.caja3{
+.boton-inferior{
     width:30%;
-    height:300px;
-    background-color:cornflowerblue;
-    float:left;
+    height:30px;
+    background-color:#FF5733;
+    color:#fff;
+    border: none;
 }
 
+/*Posiciones del boton de la caja inferior*/
+.caja-inferior .boton-inferior{
+    position:absolute;
+    left:85%;
+    top:65%;
+    transform: translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%);
 
-
-/*Para alinear el menu de la tabla la propiedad display:inline-block convierte el menú en una sola linea horizontal*/
-
-.menu2{
-    background-color:none ;
-
-
-    
-}
-ul li{
-    display:none;
-    width:20%;          /*Tamaño de cada boton*/
-    height:40px;        /*Alto de los botones del menu*/
-    background-color:coral;
-    padding-top:15px;
 }
