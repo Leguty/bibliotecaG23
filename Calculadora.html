@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora_JavaScrip</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!--Enlace para conectar la hoja de estilos-->
+    <link href="css/estilo_boostrap.css" rel="stylesheet">
+    
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet"/>
+   
+    <!--Para enlazar con la hoja de JavaScrip se debe agregar el enlace de la pagina-->
+    <script src="js/calculadora.js"></script>
+
+</head>
+<body>
+    <!--<h1>Hola Mundo</h1>-->
+    <!--<p class="text-primary">Parrafo 1 Azul</p>-->
+
+    <!--Para realizar cajas llamadas container-->
+
+    <!--Se adicionara una etiqueta de JavaSrip onclick creara una ventana emergente con un click-->
+    <header class="container" onclick="alert('Dio Click Sobre Header')">
+
+    <!--Para crear cajas dentro de un container se crean rows-->
+        <div class="row">
+            <div class="caja1 col-12 col-md-6"> 
+               <a href="https://pascualbravo.edu.co/">
+                <img src="imagenes/logo1.jpg" alt="Logo de la Bilioteca"/>
+               </a>
+            </div>
+
+            <div class="caja2 col-12 col-md-6">
+                <h1>BIBLIOTECA G23</h1>
+            </div>
+
+            <div class="caja3 col-12 col-md-12">
+                
+                <!--Menu que se importo del ejercicio 2 y se complementa con la class del nav de boostrap-->
+                <nav class="navbar navbar-dark bg-primary">
+                   <ul>        
+                        <li>
+                            <a class="menu1" href="https://pascualbravo.edu.co/" target="_blank">Pascual</a></li>
+                        <li><a class="menu1" href="ejercicio1.html" target="_parent">Ejercicio 3</a></li>
+                        <li><a class="menu1" href="mailto:leidy.gutierrez.leon@gmail.com" target="_self">Correo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+   
+
+    </div>
+        </header>
+
+    <!--Formulario -->    
+    <!--<main>-->
+
+        <!--Se crea un main con container para que sea boostrap-->
+        <!--Boostrap pide crear un container y dentro del container un row-->
+        <main class="container">
+            <div class="row">
+        <br /><br />
+    
+                
+        <div class="formulario 1 col-0 col-md-2"></div>
+        <form class="col-12 col-md-8" onsubmit="return false">  
+
+            <br /><br />
+            <h1 style="text-align:center">Calculadora</h1>
+            <label class="form-label" for="Nombres">Numero 1</label>
+            <input class="form-control" type="number" id="numero1" />
+
+            <!--Este parrafo lo ingresara JavaScript de manera dinamica-->
+            <p id="parrafo_validar1"></p>
+            <br><br/>
+           
+
+            <label class="form-label" for="Numero_Documento">Numero 2</label>
+            <input class="form-control" type="number" id="numero2" />
+            
+            <!--Este parrafo lo ingresara JavaScript de manera dinamica-->
+            <div id="div_validar2"></div>
+            <br><br/>
+
+            
+            <!--Crear un boton nuevo -->
+            <input class="botones-formulario btn btn-outline-danger" type="submit" id="Boton" onclick="realizar_operaciones_matematicas()" value="Calcular"/> 
+            <input class="botones-formulario btn btn-outline-danger" type="submit" id="Boton" value="Cancelar"/>
+            <br><br/> <br><br/>
+
+        </form>
+
+        <!--Se adicionan tres cajas de Boostrap-->
+
+        <div id="resultado_suma" class="p-3 mb-2 bg-warning text-dark"></div>
+        <div id="resultado_resta" class="p-3 mb-2 bg-info text-white"></div>
+        <div id="resultado_multiplicacion" class="p-3 mb-2 bg-light text-dark"name="caja_multiplicacion"></div>
+
+        <p id="parrafo1">  </p>
+    <!--</center>-->
+        </div>    
+    </main>   
+    <!--Crear Tablas-->
+
+    <br><br/>
+
+        </center>
+        <!--Atributo Align=Alinear  bgcolor=Color Tabla width=Ancho de tabla en % para que se adapte
+        a cualquier tipo de pantalla-->
+        <!--<table align="center" bgcolor="#C0C0C0" border="1" width="50%">-->
+        
+        
+  <!--Se crea un estilo de JavaScrip dentro del head con la etiqueta script-->
+                <p>parrafo1</p>
+                <p>parrafo2</p>
+                <p>parrafo3</p>
+                <p>parrafo4</p>
+                <p>parrafo5</p>
+            <!--Crear tabla -->
+        </div>
+
+    </main>
+
+    <br /><br />            <br /><br />  
+    
+    
+   
+
+    
+    <br /><br />            <br /><br />
+
+</body>
+</html>
